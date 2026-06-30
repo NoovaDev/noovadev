@@ -216,7 +216,7 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- 1. HERO SECTION (Updated with your image)   -->
+    <!-- 1. HERO SECTION                              -->
     <!-- ========================================== -->
     <section id="home" class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-white dark:bg-[#0F172A]">
         <div class="container mx-auto px-6 max-w-7xl">
@@ -255,12 +255,11 @@
                     </div>
                 </div>
 
-                <!-- RIGHT COLUMN: Your New Premium Mockup -->
+                <!-- RIGHT COLUMN: Premium Mockup -->
                 <div class="relative flex justify-center items-center h-[300px] md:h-[450px] lg:h-[500px] reveal">
-                    <!-- Image container with subtle floating animation -->
                     <div class="relative w-full max-w-[600px] animate-float-slow rounded-xl overflow-hidden shadow-2xl shadow-slate-200/60 dark:shadow-slate-900/80 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
                         
-                        <!-- Using your exact image -->
+                        <!-- Your Image -->
                         <img src="mockup.png" 
                              alt="NoovaDev Premium Responsive Mockup" 
                              class="w-full h-auto object-cover block"
@@ -273,7 +272,7 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- 2. ABOUT ME SECTION (WITH OWNER.JPG)        -->
+    <!-- 2. ABOUT ME SECTION                         -->
     <!-- ========================================== -->
     <section id="about" class="py-20 bg-slate-50/50 dark:bg-slate-900/30 border-y border-slate-100 dark:border-slate-800">
         <div class="container mx-auto px-6 max-w-5xl">
@@ -489,7 +488,7 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- 6. CONTACT (Redesigned, Attractive)         -->
+    <!-- 6. CONTACT (WhatsApp Form + Fiverr Logo)    -->
     <!-- ========================================== -->
     <section id="contact" class="py-20 bg-slate-50/50 dark:bg-slate-900/30 border-y border-slate-100 dark:border-slate-800">
         <div class="container mx-auto px-6 max-w-6xl">
@@ -548,50 +547,50 @@
                     </div>
                 </div>
 
-                <!-- Right: Modern Contact Form -->
+                <!-- Right: WhatsApp Contact Form -->
                 <div class="lg:col-span-2">
-                    <form class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm" action="https://formspree.io/f/mjkyrqle" method="POST">
+                    <form id="whatsappForm" class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1.5">Full Name</label>
-                                <input type="text" name="name" required class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm" placeholder="John Doe" />
+                                <input type="text" id="wa_name" required class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm" placeholder="John Doe" />
                             </div>
                             <div>
                                 <label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1.5">Email Address</label>
-                                <input type="email" name="email" required class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm" placeholder="john@example.com" />
+                                <input type="email" id="wa_email" required class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm" placeholder="john@example.com" />
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1.5">Project Type</label>
-                                <select name="project_type" class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm appearance-none">
-                                    <option value="" disabled selected>Select type...</option>
-                                    <option value="website">Website</option>
-                                    <option value="ecommerce">E-Commerce</option>
-                                    <option value="webapp">Web Application</option>
-                                    <option value="software">Custom Software</option>
-                                    <option value="other">Other</option>
+                                <select id="wa_type" class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm appearance-none">
+                                    <option value="Website">Website</option>
+                                    <option value="E-Commerce">E-Commerce</option>
+                                    <option value="Web Application">Web Application</option>
+                                    <option value="Custom Software">Custom Software</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                             <div>
                                 <label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1.5">Budget Range</label>
-                                <select name="budget" class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm appearance-none">
-                                    <option value="" disabled selected>Select budget...</option>
-                                    <option value="100-300">$100 - $300</option>
-                                    <option value="300-600">$300 - $600</option>
-                                    <option value="600-1000">$600 - $1,000</option>
-                                    <option value="1000+">$1,000+</option>
+                                <select id="wa_budget" class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors text-sm appearance-none">
+                                    <option value="$100 - $300">$100 - $300</option>
+                                    <option value="$300 - $600">$300 - $600</option>
+                                    <option value="$600 - $1,000">$600 - $1,000</option>
+                                    <option value="$1,000+">$1,000+</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="mb-6">
                             <label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1.5">Project Details</label>
-                            <textarea name="message" rows="4" required class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors resize-none text-sm" placeholder="Tell me about your project..."></textarea>
+                            <textarea id="wa_message" rows="4" required class="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-brand-green focus:outline-none transition-colors resize-none text-sm" placeholder="Tell me about your project..."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold py-4 rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors shadow-md text-sm">Send Message <i class="fas fa-paper-plane ml-2"></i></button>
+                        <button type="submit" class="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold py-4 rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors shadow-md text-sm flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
                     </form>
                 </div>
             </div>
@@ -713,6 +712,28 @@
 
             reveals.forEach(reveal => {
                 observer.observe(reveal);
+            });
+
+            /* 5. WHATSAPP FORM SUBMISSION */
+            const whatsappForm = document.getElementById('whatsappForm');
+            const phoneNumber = '94783847145';
+
+            whatsappForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Get form values
+                const name = document.getElementById('wa_name').value;
+                const email = document.getElementById('wa_email').value;
+                const type = document.getElementById('wa_type').value;
+                const budget = document.getElementById('wa_budget').value;
+                const message = document.getElementById('wa_message').value;
+
+                // Construct the WhatsApp message
+                const text = `Hello NoovaDev!%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Project Type:* ${type}%0A*Budget:* ${budget}%0A*Details:* ${message}`;
+
+                // Create the WhatsApp URL and open it
+                const url = `https://wa.me/${phoneNumber}?text=${text}`;
+                window.open(url, '_blank');
             });
         });
     </script>
